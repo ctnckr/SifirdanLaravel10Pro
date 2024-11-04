@@ -23,4 +23,7 @@ Route::get('/hakkimizda', function () {
 
 Route::get('/iletisim', function () {
     echo "3Teker ;)";
+
+Route::get('/iletisim', function () {
+        echo "default main branch silindi. master default yapıldı.";    
 });
