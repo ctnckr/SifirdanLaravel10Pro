@@ -18,13 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/hakkimizda', function () {
-    echo "Yapım Aşamasındadır...";
+    echo "burası deneme hakkımızda sayfasıdır.";
 });
 
 Route::get('/iletisim', function () {
-    echo "3Teker ;)";
+    echo "burası deneme iletişim sayfasıdır.";
 });
 
-Route::get('/sil', function () {
-    echo "default main branch silindi. master default yapıldı."; 
-});
