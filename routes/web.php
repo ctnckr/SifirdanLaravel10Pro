@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dene\DeneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +18,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hakkimizda', function () {
-    echo "burası deneme hakkımızda sayfasıdır.";
+/*Route::get('/iletisim', function () {
+    //echo "burası deneme iletişim sayfasıdır.";
+    return view('iletisim');
+});*/
+
+
+/*Route::get('/hakkimizda', function () {
+    //echo "burası deneme hakkımızda sayfasıdır.";
+    return view('hakkimizda');
+});*/
+
+//Route::get('/iletisim', [DeneController::class, 'iletfonksiyon']);
+//Route::get('/hakkimizda', [DeneController::class, 'hakFonksiyon']);
+
+Route::controller(DeneController::class,)->group(function(){
+    Route::get('/iletisim', 'iletfonksiyon');
+    Route::get('/hakkimizda', 'hakFonksiyon');
 });
 
-Route::get('/iletisim', function () {
-    echo "burası deneme iletişim sayfasıdır.";
-});
 
