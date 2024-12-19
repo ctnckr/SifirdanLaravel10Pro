@@ -7,5 +7,6 @@
 </head>
 <body>
     <h2>İletişim sayfası controllerdan gelir, grup</h2>    
+    <a href="{{ route('hak.yon') }}">Hakkımızda</a>
 </body>
 </html>

@@ -7,5 +7,7 @@
 </head>
 <body>
     <h1>Hakkımızda sayfası kontrollerdan gelir, grup</h1>
+    <a href="{{ route('ilet.yon') }}">İletişim</a>
+
 </body>
 </html>

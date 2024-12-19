@@ -33,8 +33,8 @@ Route::get('/', function () {
 //Route::get('/hakkimizda', [DeneController::class, 'hakFonksiyon']);
 
 Route::controller(DeneController::class,)->group(function(){
-    Route::get('/iletisim', 'iletfonksiyon');
-    Route::get('/hakkimizda', 'hakFonksiyon');
+    Route::get('/iletisim', 'iletfonksiyon')->name('ilet.yon');
+    Route::get('/hakkimizda', 'hakFonksiyon')->name('hak.yon');
 });
 
 
